@@ -10,9 +10,9 @@ export function LoginTemplate() {
                     <img src={v.logo} alt="logo" />
                 </div>
                 <Titulo>Gestor de Gastos</Titulo>
-                <p>Toma el control de tus gastos e ingresos.</p>
+                <p className="frase">Toma el control de tus gastos e ingresos.</p>
                 <ContainerBtn>
-                    <Btnsave titulo='Iniciar con Google' icono={<v.iconogoogle/>}/>
+                    <Btnsave titulo='Iniciar con Google' icono={<v.iconogoogle/>} bgcolor={v.colorSecundario}/>
                 </ContainerBtn>
             </div>
         </Container>
@@ -45,7 +45,12 @@ const Container = styled.div`
         .contentImg{
             img{
                 max-width: 60%;
+                animation: flotar 1.5s ease-in-out infinite alternate;
             }
+        }
+        .frase{
+            color: #909090;
+            font-size: 1.2rem;
         }
     }
     @keyframes flotar{

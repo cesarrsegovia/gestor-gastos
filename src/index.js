@@ -9,3 +9,6 @@ export * from './main';
 export * from './pages/Home';
 export * from './styles/themes';
 export * from './styles/variables';
+export * from './supabase/supabase.config';
+export * from './store/AuthStore';
+export * from './context/AuthContext';

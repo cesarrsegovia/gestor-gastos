@@ -12,3 +12,4 @@ export * from './styles/variables';
 export * from './supabase/supabase.config';
 export * from './store/AuthStore';
 export * from './context/AuthContext';
+export * from './hooks/ProtectedRoute';
